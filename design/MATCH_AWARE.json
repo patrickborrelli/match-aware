@@ -1,0 +1,244 @@
+{
+    "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
+    "lastModifTS": "2016-12-29T18:37:56.711Z",
+    "persistenceSchemaVersion": "1",
+    "description": "",
+    "comments": "",
+    "author": "Patrick Borrelli",
+    "version": "",
+    "collections": [
+        {
+            "GUID": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "902eb300-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "_id"
+                }
+            ],
+            "collectionName": "ROLES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "902eb300-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "childRelationships": [],
+                    "foreignCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "7cccffb0-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "ROLE"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a8f15a50-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "9f6a1530-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "USER"
+                }
+            ],
+            "collectionName": "USER_ROLES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "a8f15a50-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "_id"
+                }
+            ],
+            "collectionName": "USERS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": [],
+            "id": "_id"
+        }
+    ],
+    "relationships": [
+        {
+            "GUID": "902eb300-cdf5-11e6-a00c-5d84e2ab71aa",
+            "name": "hasRole",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+            "childField": [
+                "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+                "7cccffb0-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "a8f15a50-cdf5-11e6-a00c-5d84e2ab71aa",
+            "name": "hasUser",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+            "childField": [
+                "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+                "9f6a1530-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "childCardinality": "1"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa": "USERS",
+        "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa": "ROLES",
+        "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa": "USER_ROLES",
+        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa": "_id",
+        "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa": "_id",
+        "7cccffb0-cdf5-11e6-a00c-5d84e2ab71aa": "ROLE",
+        "9f6a1530-cdf5-11e6-a00c-5d84e2ab71aa": "USER"
+    },
+    "databaseName": "MATCH_AWARE",
+    "dbVersion": "v3.4",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2016-12-29T18:28:46.242Z",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "x": 67,
+                        "y": 51,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "x": 344,
+                        "y": 49,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
+                        "x": 202,
+                        "y": 272,
+                        "width": 200,
+                        "height": 100
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "nodes": [],
+            "details": true
+        }
+    }
+}
