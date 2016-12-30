@@ -1,6 +1,6 @@
 {
     "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
-    "lastModifTS": "2016-12-29T20:11:25.896Z",
+    "lastModifTS": "2016-12-30T04:51:24.804Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -1182,6 +1182,24 @@
             "collectionUsers": [],
             "indexes": [],
             "id": "_id"
+        },
+        {
+            "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [],
+            "collectionName": "ACCESS_REQUEST",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
         }
     ],
     "relationships": [
@@ -1623,7 +1641,8 @@
         "913bca50-ce02-11e6-a8a6-e58229606181": "FACILITY",
         "c9b18690-ce02-11e6-a8a6-e58229606181": "FIELD_SIZE",
         "d6c5ea10-ce02-11e6-a8a6-e58229606181": "_id",
-        "dcd175f0-ce02-11e6-a8a6-e58229606181": "SIZE"
+        "dcd175f0-ce02-11e6-a8a6-e58229606181": "SIZE",
+        "0114aca0-ce4b-11e6-a8a6-e58229606181": "ACCESS_REQUEST"
     },
     "databaseName": "MATCH_AWARE",
     "dbVersion": "v3.4",
@@ -1821,6 +1840,13 @@
                             "oldHue": 0,
                             "source": "hex"
                         }
+                    },
+                    {
+                        "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                        "x": 74,
+                        "y": 502,
+                        "width": 200,
+                        "height": 100
                     }
                 ],
                 "collapsedNodes": [],
