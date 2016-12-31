@@ -1,6 +1,6 @@
 {
     "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
-    "lastModifTS": "2016-12-31T03:44:46.045Z",
+    "lastModifTS": "2016-12-31T07:19:50.929Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -14,8 +14,169 @@
             "comments": "",
             "$schema": "",
             "additionalProperties": false,
-            "properties": [],
-            "collectionName": "ACCESS_REQUEST",
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "89630cf0-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a8a5acd0-cf1d-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "98005a60-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "USER"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                        "a7d75010-cdfb-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "ab634630-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "CLUB"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "dd39c210-cf1d-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "d2b928d0-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "ROLE"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f39b9600-cf1d-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "e907c490-cdf9-11e6-a8a6-e58229606181",
+                        "752e1050-cdfa-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "df9feca0-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "TEAM"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "03c9bca0-cf1e-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "f67a7300-cf1d-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "OWNER"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [
+                        "SENT",
+                        "PENDING",
+                        "ACCEPTED",
+                        "REJECTED"
+                    ],
+                    "sample": "",
+                    "GUID": "07cbbce0-cf1e-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "STATUS",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false,
+                            false
+                        ]
+                    }
+                }
+            ],
+            "collectionName": "ACCESS_REQUESTS",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -43,7 +204,9 @@
                         "3d34f6c0-cdfd-11e6-a8a6-e58229606181",
                         "de343710-cdfe-11e6-a8a6-e58229606181",
                         "e8dd3fe0-cdfe-11e6-a8a6-e58229606181",
-                        "e846ebf0-ce01-11e6-a8a6-e58229606181"
+                        "e846ebf0-ce01-11e6-a8a6-e58229606181",
+                        "f20f9010-cf23-11e6-b2db-7dd550230cfe",
+                        "030859b0-cf24-11e6-b2db-7dd550230cfe"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -138,47 +301,7 @@
                     }
                 }
             ],
-            "collectionName": "AGE_GROUP",
-            "capped": false,
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "size": "",
-            "max": "",
-            "storageEngine": {},
-            "collectionUsers": [],
-            "indexes": []
-        },
-        {
-            "GUID": "db7ef460-cdf9-11e6-a8a6-e58229606181",
-            "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": false,
-            "properties": [
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": true,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [
-                        "f81d1640-cdfb-11e6-a8a6-e58229606181",
-                        "1a1156b0-cdfe-11e6-a8a6-e58229606181"
-                    ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "sample": "",
-                    "GUID": "a7d75010-cdfb-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "_id"
-                }
-            ],
-            "collectionName": "CLUB",
+            "collectionName": "AGE_GROUPS",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -239,7 +362,289 @@
                     "name": "USER"
                 }
             ],
-            "collectionName": "CLUB_MEMBER",
+            "collectionName": "CLUB_MEMBERS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "f81d1640-cdfb-11e6-a8a6-e58229606181",
+                        "1a1156b0-cdfe-11e6-a8a6-e58229606181",
+                        "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "a7d75010-cdfb-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                }
+            ],
+            "collectionName": "CLUBS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "99a63040-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "8e11dd10-cf1f-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                }
+            ],
+            "collectionName": "EVENT_TYPES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "64f56b40-cf1f-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "99a63040-cf1f-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+                    "foreignField": [
+                        "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+                        "8e11dd10-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "sample": "",
+                    "GUID": "6bc3f900-cf1f-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "TYPE"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a7351af0-cf1f-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "e907c490-cdf9-11e6-a8a6-e58229606181",
+                        "752e1050-cdfa-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "9ccb3e00-cf1f-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "AWAY_TEAM"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f91af530-cf22-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "e907c490-cdf9-11e6-a8a6-e58229606181",
+                        "752e1050-cdfa-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "74742290-cf20-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "HOME_TEAM"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2764eef0-cf23-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "ad3815a0-cdfe-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "ad3815a0-cdfe-11e6-a8a6-e58229606181",
+                        "b63fa370-cdfe-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "1e80c7a0-cf23-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "LEAGUE"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "bc78fef0-cf23-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "31647150-cf23-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "OFFICIALS"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f20f9010-cf23-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "e8a066d0-cf23-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "MIN_AGE_GROUP"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "030859b0-cf24-11e6-b2db-7dd550230cfe",
+                    "childRelationships": [],
+                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "f87549e0-cf23-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "MAX_AGE_GROUP"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "43f76d80-cf24-11e6-b2db-7dd550230cfe",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "ORGANIZATION"
+                }
+            ],
+            "collectionName": "EVENTS",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -317,7 +722,7 @@
                     "name": "_id"
                 }
             ],
-            "collectionName": "FIELD_SIZE",
+            "collectionName": "FIELD_SIZES",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -397,153 +802,6 @@
                 }
             ],
             "collectionName": "FIELDS",
-            "capped": false,
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "size": "",
-            "max": "",
-            "storageEngine": {},
-            "collectionUsers": [],
-            "indexes": []
-        },
-        {
-            "GUID": "ad3815a0-cdfe-11e6-a8a6-e58229606181",
-            "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": false,
-            "properties": [
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": true,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [
-                        "6fde8f30-cdff-11e6-a8a6-e58229606181",
-                        "f4abd590-ce01-11e6-a8a6-e58229606181"
-                    ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "sample": "",
-                    "GUID": "b63fa370-cdfe-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "_id"
-                },
-                {
-                    "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "GUID": "bcb11d10-cdfe-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "NAME"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "de343710-cdfe-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "cf624510-cdfe-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "MIN_AGE_GROUP"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "e8dd3fe0-cdfe-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "e0dfa800-cdfe-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "MAX_AGE_GROUP"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "cb859530-ce00-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "9f6420c0-ce00-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "9f6420c0-ce00-11e6-a8a6-e58229606181",
-                        "b0bf55b0-ce00-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "c1c8c120-ce00-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "TYPE"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "837dd5d0-ce01-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "01ed31f0-ce01-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "01ed31f0-ce01-11e6-a8a6-e58229606181",
-                        "1dac5060-ce01-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "7a01db50-ce01-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "RESCHEDULE_RULES"
-                }
-            ],
-            "collectionName": "LEAGUE",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -666,7 +924,155 @@
                     "name": "NAME"
                 }
             ],
-            "collectionName": "LEAGUE_TYPE",
+            "collectionName": "LEAGUE_TYPES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "ad3815a0-cdfe-11e6-a8a6-e58229606181",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "6fde8f30-cdff-11e6-a8a6-e58229606181",
+                        "f4abd590-ce01-11e6-a8a6-e58229606181",
+                        "2764eef0-cf23-11e6-b2db-7dd550230cfe"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "b63fa370-cdfe-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "bcb11d10-cdfe-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "NAME"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "de343710-cdfe-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "cf624510-cdfe-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "MIN_AGE_GROUP"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "e8dd3fe0-cdfe-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "e0dfa800-cdfe-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "MAX_AGE_GROUP"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "cb859530-ce00-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "9f6420c0-ce00-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "9f6420c0-ce00-11e6-a8a6-e58229606181",
+                        "b0bf55b0-ce00-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "c1c8c120-ce00-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "TYPE"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "837dd5d0-ce01-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "01ed31f0-ce01-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "01ed31f0-ce01-11e6-a8a6-e58229606181",
+                        "1dac5060-ce01-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "7a01db50-ce01-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "RESCHEDULE_RULES"
+                }
+            ],
+            "collectionName": "LEAGUES",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -819,7 +1225,8 @@
                     "relationshipType": "",
                     "parentRelationship": "",
                     "childRelationships": [
-                        "902eb300-cdf5-11e6-a00c-5d84e2ab71aa"
+                        "902eb300-cdf5-11e6-a00c-5d84e2ab71aa",
+                        "dd39c210-cf1d-11e6-b2db-7dd550230cfe"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -895,112 +1302,6 @@
                 }
             ],
             "collectionName": "RULES",
-            "capped": false,
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "size": "",
-            "max": "",
-            "storageEngine": {},
-            "collectionUsers": [],
-            "indexes": []
-        },
-        {
-            "GUID": "e907c490-cdf9-11e6-a8a6-e58229606181",
-            "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": false,
-            "properties": [
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": true,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [
-                        "e76346e0-cdfa-11e6-a8a6-e58229606181",
-                        "6d7cce40-cdfb-11e6-a8a6-e58229606181",
-                        "626cc970-cdff-11e6-a8a6-e58229606181"
-                    ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "sample": "",
-                    "GUID": "752e1050-cdfa-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "_id"
-                },
-                {
-                    "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "GUID": "844bd860-cdfa-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "NAME"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "f81d1640-cdfb-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "db7ef460-cdf9-11e6-a8a6-e58229606181",
-                        "a7d75010-cdfb-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "f057f380-cdfb-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "CLUB"
-                },
-                {
-                    "type": "objectId",
-                    "format": "",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "3d34f6c0-cdfd-11e6-a8a6-e58229606181",
-                    "childRelationships": [],
-                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                    "foreignField": [
-                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
-                    ],
-                    "sample": "",
-                    "GUID": "3282c630-cdfd-11e6-a8a6-e58229606181",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": true,
-                    "id": "",
-                    "name": "AGE_GROUP"
-                }
-            ],
-            "collectionName": "TEAM",
             "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
@@ -1133,6 +1434,115 @@
             "indexes": []
         },
         {
+            "GUID": "e907c490-cdf9-11e6-a8a6-e58229606181",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "e76346e0-cdfa-11e6-a8a6-e58229606181",
+                        "6d7cce40-cdfb-11e6-a8a6-e58229606181",
+                        "626cc970-cdff-11e6-a8a6-e58229606181",
+                        "f39b9600-cf1d-11e6-b2db-7dd550230cfe",
+                        "a7351af0-cf1f-11e6-b2db-7dd550230cfe",
+                        "f91af530-cf22-11e6-b2db-7dd550230cfe"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "752e1050-cdfa-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "844bd860-cdfa-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "NAME"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f81d1640-cdfb-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                        "a7d75010-cdfb-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "f057f380-cdfb-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "CLUB"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3d34f6c0-cdfd-11e6-a8a6-e58229606181",
+                    "childRelationships": [],
+                    "foreignCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                        "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "3282c630-cdfd-11e6-a8a6-e58229606181",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "AGE_GROUP"
+                }
+            ],
+            "collectionName": "TEAMS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
             "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
             "type": "object",
             "description": "",
@@ -1211,7 +1621,10 @@
                         "a8f15a50-cdf5-11e6-a00c-5d84e2ab71aa",
                         "f4b835d0-cdfa-11e6-a8a6-e58229606181",
                         "7b024310-cdfb-11e6-a8a6-e58229606181",
-                        "2769ef20-cdfe-11e6-a8a6-e58229606181"
+                        "2769ef20-cdfe-11e6-a8a6-e58229606181",
+                        "a8a5acd0-cf1d-11e6-b2db-7dd550230cfe",
+                        "03c9bca0-cf1e-11e6-b2db-7dd550230cfe",
+                        "bc78fef0-cf23-11e6-b2db-7dd550230cfe"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -1617,6 +2030,234 @@
                 "dcd175f0-ce02-11e6-a8a6-e58229606181"
             ],
             "childCardinality": "1"
+        },
+        {
+            "GUID": "a8a5acd0-cf1d-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "childField": [
+                "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                "98005a60-cf1d-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+            "parentField": [
+                "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                "a7d75010-cdfb-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "childField": [
+                "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                "ab634630-cf1d-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "dd39c210-cf1d-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "childField": [
+                "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                "d2b928d0-cf1d-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f39b9600-cf1d-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+            "parentField": [
+                "e907c490-cdf9-11e6-a8a6-e58229606181",
+                "752e1050-cdfa-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "childField": [
+                "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                "df9feca0-cf1d-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "03c9bca0-cf1e-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "childField": [
+                "0114aca0-ce4b-11e6-a8a6-e58229606181",
+                "f67a7300-cf1d-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "99a63040-cf1f-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+            "parentField": [
+                "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+                "8e11dd10-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "6bc3f900-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "a7351af0-cf1f-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+            "parentField": [
+                "e907c490-cdf9-11e6-a8a6-e58229606181",
+                "752e1050-cdfa-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "9ccb3e00-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f91af530-cf22-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e907c490-cdf9-11e6-a8a6-e58229606181",
+            "parentField": [
+                "e907c490-cdf9-11e6-a8a6-e58229606181",
+                "752e1050-cdfa-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "74742290-cf20-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "2764eef0-cf23-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "ad3815a0-cdfe-11e6-a8a6-e58229606181",
+            "parentField": [
+                "ad3815a0-cdfe-11e6-a8a6-e58229606181",
+                "b63fa370-cdfe-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "1e80c7a0-cf23-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "bc78fef0-cf23-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "31647150-cf23-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f20f9010-cf23-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+            "parentField": [
+                "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "e8a066d0-cf23-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "030859b0-cf24-11e6-b2db-7dd550230cfe",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+            "parentField": [
+                "f835d8f0-cdfc-11e6-a8a6-e58229606181",
+                "fd8dcc40-cdfc-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "f87549e0-cf23-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
         }
     ],
     "users": [],
@@ -1628,8 +2269,8 @@
         "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa": "_id",
         "7cccffb0-cdf5-11e6-a00c-5d84e2ab71aa": "ROLE",
         "9f6a1530-cdf5-11e6-a00c-5d84e2ab71aa": "USER",
-        "db7ef460-cdf9-11e6-a8a6-e58229606181": "CLUB",
-        "e907c490-cdf9-11e6-a8a6-e58229606181": "TEAM",
+        "db7ef460-cdf9-11e6-a8a6-e58229606181": "CLUBS",
+        "e907c490-cdf9-11e6-a8a6-e58229606181": "TEAMS",
         "752e1050-cdfa-11e6-a8a6-e58229606181": "_id",
         "844bd860-cdfa-11e6-a8a6-e58229606181": "NAME",
         "cf4f7d30-cdfa-11e6-a8a6-e58229606181": "TEAM_PLAYERS",
@@ -1640,15 +2281,15 @@
         "705e1c40-cdfb-11e6-a8a6-e58229606181": "COACH",
         "a7d75010-cdfb-11e6-a8a6-e58229606181": "_id",
         "f057f380-cdfb-11e6-a8a6-e58229606181": "CLUB",
-        "f835d8f0-cdfc-11e6-a8a6-e58229606181": "AGE_GROUP",
+        "f835d8f0-cdfc-11e6-a8a6-e58229606181": "AGE_GROUPS",
         "fd8dcc40-cdfc-11e6-a8a6-e58229606181": "_id",
         "064b31b0-cdfd-11e6-a8a6-e58229606181": "BIRTH_YEAR",
         "16e4eb60-cdfd-11e6-a8a6-e58229606181": "SOCCER_YEAR",
         "3282c630-cdfd-11e6-a8a6-e58229606181": "AGE_GROUP",
-        "074860f0-cdfe-11e6-a8a6-e58229606181": "CLUB_MEMBER",
+        "074860f0-cdfe-11e6-a8a6-e58229606181": "CLUB_MEMBERS",
         "0ef9d4a0-cdfe-11e6-a8a6-e58229606181": "CLUB",
         "1d8dd340-cdfe-11e6-a8a6-e58229606181": "USER",
-        "ad3815a0-cdfe-11e6-a8a6-e58229606181": "LEAGUE",
+        "ad3815a0-cdfe-11e6-a8a6-e58229606181": "LEAGUES",
         "b63fa370-cdfe-11e6-a8a6-e58229606181": "_id",
         "bcb11d10-cdfe-11e6-a8a6-e58229606181": "NAME",
         "cf624510-cdfe-11e6-a8a6-e58229606181": "MIN_AGE_GROUP",
@@ -1656,7 +2297,7 @@
         "0a44bb90-cdff-11e6-a8a6-e58229606181": "LEAGUE_TEAMS",
         "59b55770-cdff-11e6-a8a6-e58229606181": "TEAM",
         "65447a80-cdff-11e6-a8a6-e58229606181": "LEAGUE",
-        "9f6420c0-ce00-11e6-a8a6-e58229606181": "LEAGUE_TYPE",
+        "9f6420c0-ce00-11e6-a8a6-e58229606181": "LEAGUE_TYPES",
         "b0bf55b0-ce00-11e6-a8a6-e58229606181": "_id",
         "b6d84f10-ce00-11e6-a8a6-e58229606181": "NAME",
         "c1c8c120-ce00-11e6-a8a6-e58229606181": "TYPE",
@@ -1674,11 +2315,30 @@
         "70113090-ce02-11e6-a8a6-e58229606181": "_id",
         "79131910-ce02-11e6-a8a6-e58229606181": "_id",
         "913bca50-ce02-11e6-a8a6-e58229606181": "FACILITY",
-        "c9b18690-ce02-11e6-a8a6-e58229606181": "FIELD_SIZE",
+        "c9b18690-ce02-11e6-a8a6-e58229606181": "FIELD_SIZES",
         "d6c5ea10-ce02-11e6-a8a6-e58229606181": "_id",
         "dcd175f0-ce02-11e6-a8a6-e58229606181": "SIZE",
-        "0114aca0-ce4b-11e6-a8a6-e58229606181": "ACCESS_REQUEST",
-        "8533b890-cec4-11e6-a55d-9f2af6bd3c1c": "GENDER"
+        "0114aca0-ce4b-11e6-a8a6-e58229606181": "ACCESS_REQUESTS",
+        "8533b890-cec4-11e6-a55d-9f2af6bd3c1c": "GENDER",
+        "89630cf0-cf1d-11e6-b2db-7dd550230cfe": "_id",
+        "98005a60-cf1d-11e6-b2db-7dd550230cfe": "USER",
+        "ab634630-cf1d-11e6-b2db-7dd550230cfe": "CLUB",
+        "d2b928d0-cf1d-11e6-b2db-7dd550230cfe": "ROLE",
+        "df9feca0-cf1d-11e6-b2db-7dd550230cfe": "TEAM",
+        "f67a7300-cf1d-11e6-b2db-7dd550230cfe": "OWNER",
+        "07cbbce0-cf1e-11e6-b2db-7dd550230cfe": "STATUS",
+        "539e5500-cf1f-11e6-b2db-7dd550230cfe": "EVENTS",
+        "64f56b40-cf1f-11e6-b2db-7dd550230cfe": "_id",
+        "6bc3f900-cf1f-11e6-b2db-7dd550230cfe": "TYPE",
+        "7a828a10-cf1f-11e6-b2db-7dd550230cfe": "EVENT_TYPES",
+        "8e11dd10-cf1f-11e6-b2db-7dd550230cfe": "_id",
+        "9ccb3e00-cf1f-11e6-b2db-7dd550230cfe": "AWAY_TEAM",
+        "74742290-cf20-11e6-b2db-7dd550230cfe": "HOME_TEAM",
+        "1e80c7a0-cf23-11e6-b2db-7dd550230cfe": "LEAGUE",
+        "31647150-cf23-11e6-b2db-7dd550230cfe": "OFFICIALS",
+        "e8a066d0-cf23-11e6-b2db-7dd550230cfe": "MIN_AGE_GROUP",
+        "f87549e0-cf23-11e6-b2db-7dd550230cfe": "MAX_AGE_GROUP",
+        "43f76d80-cf24-11e6-b2db-7dd550230cfe": "ORGANIZATION"
     },
     "databaseName": "MATCH_AWARE",
     "dbVersion": "v3.4",
@@ -1712,7 +2372,7 @@
                     },
                     {
                         "GUID": "db7ef460-cdf9-11e6-a8a6-e58229606181",
-                        "x": 440,
+                        "x": 441,
                         "y": 563,
                         "width": 201,
                         "height": 100
@@ -1740,7 +2400,7 @@
                     },
                     {
                         "GUID": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                        "x": 441,
+                        "x": 442,
                         "y": 748,
                         "width": 200,
                         "height": 100
@@ -1850,7 +2510,7 @@
                     {
                         "GUID": "c9b18690-ce02-11e6-a8a6-e58229606181",
                         "x": 344,
-                        "y": 163,
+                        "y": 162,
                         "width": 200,
                         "height": 100,
                         "color": {
@@ -1879,10 +2539,70 @@
                     },
                     {
                         "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
-                        "x": 74,
-                        "y": 502,
+                        "x": 40,
+                        "y": 475,
+                        "width": 207,
+                        "height": 137
+                    },
+                    {
+                        "GUID": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                        "x": 40,
+                        "y": 673,
+                        "width": 208,
+                        "height": 181,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
+                        "x": 40,
+                        "y": 896,
                         "width": 200,
-                        "height": 100
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
                     }
                 ],
                 "collapsedNodes": [],
