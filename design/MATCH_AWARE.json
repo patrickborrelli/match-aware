@@ -1,12 +1,30 @@
 {
     "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
-    "lastModifTS": "2016-12-30T04:51:24.804Z",
+    "lastModifTS": "2016-12-31T03:44:46.045Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
     "author": "Patrick Borrelli",
     "version": "",
     "collections": [
+        {
+            "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [],
+            "collectionName": "ACCESS_REQUEST",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
         {
             "GUID": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
             "type": "object",
@@ -83,6 +101,41 @@
                     "required": true,
                     "id": "",
                     "name": "SOCCER_YEAR"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [
+                        "BOYS",
+                        "GIRLS",
+                        "MIXED"
+                    ],
+                    "sample": "",
+                    "GUID": "8533b890-cec4-11e6-a55d-9f2af6bd3c1c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "GENDER",
+                    "error": {
+                        "enum": false,
+                        "enums": [
+                            false,
+                            false,
+                            false
+                        ]
+                    }
                 }
             ],
             "collectionName": "AGE_GROUP",
@@ -1182,24 +1235,6 @@
             "collectionUsers": [],
             "indexes": [],
             "id": "_id"
-        },
-        {
-            "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
-            "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": false,
-            "properties": [],
-            "collectionName": "ACCESS_REQUEST",
-            "capped": false,
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "size": "",
-            "max": "",
-            "storageEngine": {},
-            "collectionUsers": [],
-            "indexes": []
         }
     ],
     "relationships": [
@@ -1642,7 +1677,8 @@
         "c9b18690-ce02-11e6-a8a6-e58229606181": "FIELD_SIZE",
         "d6c5ea10-ce02-11e6-a8a6-e58229606181": "_id",
         "dcd175f0-ce02-11e6-a8a6-e58229606181": "SIZE",
-        "0114aca0-ce4b-11e6-a8a6-e58229606181": "ACCESS_REQUEST"
+        "0114aca0-ce4b-11e6-a8a6-e58229606181": "ACCESS_REQUEST",
+        "8533b890-cec4-11e6-a55d-9f2af6bd3c1c": "GENDER"
     },
     "databaseName": "MATCH_AWARE",
     "dbVersion": "v3.4",
@@ -1712,7 +1748,7 @@
                     {
                         "GUID": "074860f0-cdfe-11e6-a8a6-e58229606181",
                         "x": 160,
-                        "y": 290,
+                        "y": 289,
                         "width": 200,
                         "height": 100
                     },
