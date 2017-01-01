@@ -1,6 +1,6 @@
 {
     "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
-    "lastModifTS": "2016-12-31T07:19:50.929Z",
+    "lastModifTS": "2016-12-31T23:54:00.472Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -312,6 +312,127 @@
             "indexes": []
         },
         {
+            "GUID": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "fcfe4770-cfb2-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "10e41ee0-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                    "foreignField": [
+                        "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                        "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "sample": "",
+                    "GUID": "02271470-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "ORIGINAL_EVENT"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "21fb45f0-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                    "foreignField": [
+                        "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                        "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "sample": "",
+                    "GUID": "13253540-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "CHANGED_EVENT"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3111bb00-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "287f0f10-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "APPROVER"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3bc6d1c0-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "34735c90-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "SUBMITTER"
+                }
+            ],
+            "collectionName": "CHANGE_REQUEST",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
             "GUID": "074860f0-cdfe-11e6-a8a6-e58229606181",
             "type": "object",
             "description": "",
@@ -389,7 +510,8 @@
                     "childRelationships": [
                         "f81d1640-cdfb-11e6-a8a6-e58229606181",
                         "1a1156b0-cdfe-11e6-a8a6-e58229606181",
-                        "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe"
+                        "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe",
+                        "30225f80-cf93-11e6-add4-7791adaf3c0c"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -466,7 +588,12 @@
                     "primaryKey": true,
                     "relationshipType": "",
                     "parentRelationship": "",
-                    "childRelationships": [],
+                    "childRelationships": [
+                        "10e41ee0-cfb3-11e6-add4-7791adaf3c0c",
+                        "21fb45f0-cfb3-11e6-add4-7791adaf3c0c",
+                        "8dd8f380-cfb3-11e6-add4-7791adaf3c0c",
+                        "e7d59a50-cfb3-11e6-add4-7791adaf3c0c"
+                    ],
                     "foreignCollection": "",
                     "foreignField": [],
                     "sample": "",
@@ -629,11 +756,14 @@
                     "type": "objectId",
                     "format": "",
                     "primaryKey": false,
-                    "relationshipType": "",
-                    "parentRelationship": "",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d8cc8e60-cf95-11e6-add4-7791adaf3c0c",
                     "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
+                    "foreignCollection": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                    "foreignField": [
+                        "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                        "07a6c190-cf93-11e6-add4-7791adaf3c0c"
+                    ],
                     "sample": "",
                     "GUID": "43f76d80-cf24-11e6-b2db-7dd550230cfe",
                     "description": "",
@@ -642,6 +772,48 @@
                     "required": false,
                     "id": "",
                     "name": "ORGANIZATION"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "e618f1d0-cf95-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "67173750-ce02-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "67173750-ce02-11e6-a8a6-e58229606181",
+                        "79131910-ce02-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "df215840-cf95-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "FIELD"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "fdb84ed0-cf95-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "f4f59230-cf95-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "CREATOR"
                 }
             ],
             "collectionName": "EVENTS",
@@ -746,7 +918,9 @@
                     "primaryKey": true,
                     "relationshipType": "",
                     "parentRelationship": "",
-                    "childRelationships": [],
+                    "childRelationships": [
+                        "e618f1d0-cf95-11e6-add4-7791adaf3c0c"
+                    ],
                     "foreignCollection": "",
                     "foreignField": [],
                     "sample": "",
@@ -1083,6 +1257,308 @@
             "indexes": []
         },
         {
+            "GUID": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "d912ea90-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "e7d59a50-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                    "foreignField": [
+                        "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                        "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "sample": "",
+                    "GUID": "e0650030-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "EVENT"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f8dedeb0-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "f0bc59b0-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "SENDER"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "04615790-cfb4-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "fb6c1940-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "RECIPIENT"
+                }
+            ],
+            "collectionName": "MESSAGES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "801404b0-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "8dd8f380-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                    "foreignField": [
+                        "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                        "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+                    ],
+                    "sample": "",
+                    "GUID": "854de8b0-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "EVENT"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a7a76580-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "90b3b1d0-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "SENDER"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "b6d4bdf0-cfb3-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "aa65e940-cfb3-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "RECIPIENT"
+                }
+            ],
+            "collectionName": "NOTIFICATION",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
+            "GUID": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "d8cc8e60-cf95-11e6-add4-7791adaf3c0c"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "07a6c190-cf93-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1e95e160-cf93-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "0e56a3c0-cf93-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "ADMINISTRATOR"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "30225f80-cf93-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                    "foreignField": [
+                        "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                        "a7d75010-cdfb-11e6-a8a6-e58229606181"
+                    ],
+                    "sample": "",
+                    "GUID": "20f68db0-cf93-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "CLUB_AFFILIATION"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "c5fc1e90-cf95-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "bdbd37f0-cf95-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "STAFF"
+                }
+            ],
+            "collectionName": "ORGANIZATIONS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
             "GUID": "01ed31f0-ce01-11e6-a8a6-e58229606181",
             "type": "object",
             "description": "",
@@ -1226,7 +1702,8 @@
                     "parentRelationship": "",
                     "childRelationships": [
                         "902eb300-cdf5-11e6-a00c-5d84e2ab71aa",
-                        "dd39c210-cf1d-11e6-b2db-7dd550230cfe"
+                        "dd39c210-cf1d-11e6-b2db-7dd550230cfe",
+                        "31106600-cfb4-11e6-add4-7791adaf3c0c"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -1543,6 +2020,64 @@
             "indexes": []
         },
         {
+            "GUID": "15110a40-cfb4-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "206d8490-cfb4-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "31106600-cfb4-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "264ca940-cfb4-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "ROLE"
+                }
+            ],
+            "collectionName": "USER_INVITES",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
             "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
             "type": "object",
             "description": "",
@@ -1604,6 +2139,64 @@
             "indexes": []
         },
         {
+            "GUID": "38c5d150-cfb4-11e6-add4-7791adaf3c0c",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "4ac8df00-cfb4-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "_id"
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "58ab8f00-cfb4-11e6-add4-7791adaf3c0c",
+                    "childRelationships": [],
+                    "foreignCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                    "foreignField": [
+                        "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                        "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+                    ],
+                    "sample": "",
+                    "GUID": "50ceeca0-cfb4-11e6-add4-7791adaf3c0c",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "USER"
+                }
+            ],
+            "collectionName": "USER_SETTINGS",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngine": {},
+            "collectionUsers": [],
+            "indexes": []
+        },
+        {
             "GUID": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
             "type": "object",
             "description": "",
@@ -1624,7 +2217,17 @@
                         "2769ef20-cdfe-11e6-a8a6-e58229606181",
                         "a8a5acd0-cf1d-11e6-b2db-7dd550230cfe",
                         "03c9bca0-cf1e-11e6-b2db-7dd550230cfe",
-                        "bc78fef0-cf23-11e6-b2db-7dd550230cfe"
+                        "bc78fef0-cf23-11e6-b2db-7dd550230cfe",
+                        "1e95e160-cf93-11e6-add4-7791adaf3c0c",
+                        "c5fc1e90-cf95-11e6-add4-7791adaf3c0c",
+                        "fdb84ed0-cf95-11e6-add4-7791adaf3c0c",
+                        "3111bb00-cfb3-11e6-add4-7791adaf3c0c",
+                        "3bc6d1c0-cfb3-11e6-add4-7791adaf3c0c",
+                        "a7a76580-cfb3-11e6-add4-7791adaf3c0c",
+                        "b6d4bdf0-cfb3-11e6-add4-7791adaf3c0c",
+                        "f8dedeb0-cfb3-11e6-add4-7791adaf3c0c",
+                        "04615790-cfb4-11e6-add4-7791adaf3c0c",
+                        "58ab8f00-cfb4-11e6-add4-7791adaf3c0c"
                     ],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -2258,6 +2861,348 @@
                 "f87549e0-cf23-11e6-b2db-7dd550230cfe"
             ],
             "childCardinality": "1"
+        },
+        {
+            "GUID": "1e95e160-cf93-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                "0e56a3c0-cf93-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "30225f80-cf93-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "db7ef460-cdf9-11e6-a8a6-e58229606181",
+            "parentField": [
+                "db7ef460-cdf9-11e6-a8a6-e58229606181",
+                "a7d75010-cdfb-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                "20f68db0-cf93-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "c5fc1e90-cf95-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                "bdbd37f0-cf95-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "d8cc8e60-cf95-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+            "parentField": [
+                "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                "07a6c190-cf93-11e6-add4-7791adaf3c0c"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "43f76d80-cf24-11e6-b2db-7dd550230cfe"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "e618f1d0-cf95-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "67173750-ce02-11e6-a8a6-e58229606181",
+            "parentField": [
+                "67173750-ce02-11e6-a8a6-e58229606181",
+                "79131910-ce02-11e6-a8a6-e58229606181"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "df215840-cf95-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "fdb84ed0-cf95-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "childField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "f4f59230-cf95-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "10e41ee0-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "parentField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+                "02271470-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "21fb45f0-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "parentField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+                "13253540-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "3111bb00-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+                "287f0f10-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "3bc6d1c0-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+                "34735c90-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "8dd8f380-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "parentField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+                "854de8b0-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "a7a76580-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+                "90b3b1d0-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "b6d4bdf0-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+                "aa65e940-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "e7d59a50-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+            "parentField": [
+                "539e5500-cf1f-11e6-b2db-7dd550230cfe",
+                "64f56b40-cf1f-11e6-b2db-7dd550230cfe"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+                "e0650030-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "f8dedeb0-cfb3-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+                "f0bc59b0-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "04615790-cfb4-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+                "fb6c1940-cfb3-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "31106600-cfb4-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
+                "65c268a0-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "15110a40-cfb4-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "15110a40-cfb4-11e6-add4-7791adaf3c0c",
+                "264ca940-cfb4-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "58ab8f00-cfb4-11e6-add4-7791adaf3c0c",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+            "parentField": [
+                "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
+                "516a6e70-cdf5-11e6-a00c-5d84e2ab71aa"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "38c5d150-cfb4-11e6-add4-7791adaf3c0c",
+            "childField": [
+                "38c5d150-cfb4-11e6-add4-7791adaf3c0c",
+                "50ceeca0-cfb4-11e6-add4-7791adaf3c0c"
+            ],
+            "childCardinality": "1"
         }
     ],
     "users": [],
@@ -2338,7 +3283,36 @@
         "31647150-cf23-11e6-b2db-7dd550230cfe": "OFFICIALS",
         "e8a066d0-cf23-11e6-b2db-7dd550230cfe": "MIN_AGE_GROUP",
         "f87549e0-cf23-11e6-b2db-7dd550230cfe": "MAX_AGE_GROUP",
-        "43f76d80-cf24-11e6-b2db-7dd550230cfe": "ORGANIZATION"
+        "43f76d80-cf24-11e6-b2db-7dd550230cfe": "ORGANIZATION",
+        "f95a0520-cf92-11e6-add4-7791adaf3c0c": "ORGANIZATIONS",
+        "07a6c190-cf93-11e6-add4-7791adaf3c0c": "_id",
+        "0e56a3c0-cf93-11e6-add4-7791adaf3c0c": "ADMINISTRATOR",
+        "20f68db0-cf93-11e6-add4-7791adaf3c0c": "CLUB_AFFILIATION",
+        "bdbd37f0-cf95-11e6-add4-7791adaf3c0c": "STAFF",
+        "df215840-cf95-11e6-add4-7791adaf3c0c": "FIELD",
+        "f4f59230-cf95-11e6-add4-7791adaf3c0c": "CREATOR",
+        "ab8690f0-cfb2-11e6-add4-7791adaf3c0c": "CHANGE_REQUEST",
+        "fcfe4770-cfb2-11e6-add4-7791adaf3c0c": "_id",
+        "02271470-cfb3-11e6-add4-7791adaf3c0c": "ORIGINAL_EVENT",
+        "13253540-cfb3-11e6-add4-7791adaf3c0c": "CHANGED_EVENT",
+        "287f0f10-cfb3-11e6-add4-7791adaf3c0c": "APPROVER",
+        "34735c90-cfb3-11e6-add4-7791adaf3c0c": "SUBMITTER",
+        "693f71c0-cfb3-11e6-add4-7791adaf3c0c": "NOTIFICATION",
+        "801404b0-cfb3-11e6-add4-7791adaf3c0c": "_id",
+        "854de8b0-cfb3-11e6-add4-7791adaf3c0c": "EVENT",
+        "90b3b1d0-cfb3-11e6-add4-7791adaf3c0c": "SENDER",
+        "aa65e940-cfb3-11e6-add4-7791adaf3c0c": "RECIPIENT",
+        "cd31fe00-cfb3-11e6-add4-7791adaf3c0c": "MESSAGES",
+        "d912ea90-cfb3-11e6-add4-7791adaf3c0c": "_id",
+        "e0650030-cfb3-11e6-add4-7791adaf3c0c": "EVENT",
+        "f0bc59b0-cfb3-11e6-add4-7791adaf3c0c": "SENDER",
+        "fb6c1940-cfb3-11e6-add4-7791adaf3c0c": "RECIPIENT",
+        "15110a40-cfb4-11e6-add4-7791adaf3c0c": "USER_INVITES",
+        "206d8490-cfb4-11e6-add4-7791adaf3c0c": "_id",
+        "264ca940-cfb4-11e6-add4-7791adaf3c0c": "ROLE",
+        "38c5d150-cfb4-11e6-add4-7791adaf3c0c": "USER_SETTINGS",
+        "4ac8df00-cfb4-11e6-add4-7791adaf3c0c": "_id",
+        "50ceeca0-cfb4-11e6-add4-7791adaf3c0c": "USER"
     },
     "databaseName": "MATCH_AWARE",
     "dbVersion": "v3.4",
@@ -2365,8 +3339,8 @@
                     },
                     {
                         "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
-                        "x": 1057,
-                        "y": 170,
+                        "x": 1054,
+                        "y": 120,
                         "width": 194,
                         "height": 102
                     },
@@ -2407,8 +3381,8 @@
                     },
                     {
                         "GUID": "074860f0-cdfe-11e6-a8a6-e58229606181",
-                        "x": 160,
-                        "y": 289,
+                        "x": 40,
+                        "y": 267,
                         "width": 200,
                         "height": 100
                     },
@@ -2547,9 +3521,9 @@
                     {
                         "GUID": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
                         "x": 40,
-                        "y": 673,
-                        "width": 208,
-                        "height": 181,
+                        "y": 641,
+                        "width": 209,
+                        "height": 194,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -2577,7 +3551,7 @@
                     {
                         "GUID": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
                         "x": 40,
-                        "y": 896,
+                        "y": 886,
                         "width": 200,
                         "height": 100,
                         "color": {
@@ -2603,6 +3577,140 @@
                             "oldHue": 45.18218623481781,
                             "source": "hex"
                         }
+                    },
+                    {
+                        "GUID": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
+                        "x": 441,
+                        "y": 1113,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
+                        "x": 41,
+                        "y": 1031,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
+                        "x": 40,
+                        "y": 1189,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
+                        "x": 41,
+                        "y": 1327,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "15110a40-cfb4-11e6-add4-7791adaf3c0c",
+                        "x": 287,
+                        "y": 1415,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 45.18218623481781,
+                                "s": 0.9919678714859438,
+                                "l": 0.5117647058823529,
+                                "a": 1
+                            },
+                            "hex": "#fec107",
+                            "rgb": {
+                                "r": 254,
+                                "g": 193,
+                                "b": 7,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 45.18218623481781,
+                                "s": 0.9724409448818897,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 45.18218623481781,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "38c5d150-cfb4-11e6-add4-7791adaf3c0c",
+                        "x": 1059,
+                        "y": 256,
+                        "width": 200,
+                        "height": 100
                     }
                 ],
                 "collapsedNodes": [],
