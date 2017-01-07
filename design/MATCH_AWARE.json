@@ -1,6 +1,6 @@
 {
     "GUID": "a2713020-cdf4-11e6-a00c-5d84e2ab71aa",
-    "lastModifTS": "2016-12-31T23:54:00.472Z",
+    "lastModifTS": "2017-01-07T16:32:54.043Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -2522,7 +2522,7 @@
         },
         {
             "GUID": "cb859530-ce00-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "typeOfLeague",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2541,7 +2541,7 @@
         },
         {
             "GUID": "837dd5d0-ce01-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "rulesForReschedule",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2560,7 +2560,7 @@
         },
         {
             "GUID": "e846ebf0-ce01-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "rulesForAgeGroup",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2579,7 +2579,7 @@
         },
         {
             "GUID": "f4abd590-ce01-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "rulesForLeague",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2598,7 +2598,7 @@
         },
         {
             "GUID": "98e99480-ce02-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "belongsTo",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2617,7 +2617,7 @@
         },
         {
             "GUID": "e50f7230-ce02-11e6-a8a6-e58229606181",
-            "name": "New Relationship",
+            "name": "definedBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2636,7 +2636,7 @@
         },
         {
             "GUID": "a8a5acd0-cf1d-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "forUser",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2655,7 +2655,7 @@
         },
         {
             "GUID": "cd9c1ba0-cf1d-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "clubAppliedTo",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2674,7 +2674,7 @@
         },
         {
             "GUID": "dd39c210-cf1d-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "desiredRole",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2693,7 +2693,7 @@
         },
         {
             "GUID": "f39b9600-cf1d-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "teamAppliedTo",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2712,7 +2712,7 @@
         },
         {
             "GUID": "03c9bca0-cf1e-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "approver",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2731,7 +2731,7 @@
         },
         {
             "GUID": "99a63040-cf1f-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "hasType",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2750,7 +2750,7 @@
         },
         {
             "GUID": "a7351af0-cf1f-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "awayTeamForEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2769,7 +2769,7 @@
         },
         {
             "GUID": "f91af530-cf22-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "homeTeamForEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2788,7 +2788,7 @@
         },
         {
             "GUID": "2764eef0-cf23-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "eventForLeague",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2807,7 +2807,7 @@
         },
         {
             "GUID": "bc78fef0-cf23-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "officiatedBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2826,7 +2826,7 @@
         },
         {
             "GUID": "f20f9010-cf23-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "atLeast",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2845,7 +2845,7 @@
         },
         {
             "GUID": "030859b0-cf24-11e6-b2db-7dd550230cfe",
-            "name": "New Relationship",
+            "name": "atMost",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2864,7 +2864,7 @@
         },
         {
             "GUID": "1e95e160-cf93-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "administerdBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2883,7 +2883,7 @@
         },
         {
             "GUID": "30225f80-cf93-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "worksFor",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2902,7 +2902,7 @@
         },
         {
             "GUID": "c5fc1e90-cf95-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "worksFor",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2921,7 +2921,7 @@
         },
         {
             "GUID": "d8cc8e60-cf95-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "oraganizedBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2940,7 +2940,7 @@
         },
         {
             "GUID": "e618f1d0-cf95-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "takesPlaceAt",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2959,7 +2959,7 @@
         },
         {
             "GUID": "fdb84ed0-cf95-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "createdBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2978,7 +2978,7 @@
         },
         {
             "GUID": "10e41ee0-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "originalEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -2997,7 +2997,7 @@
         },
         {
             "GUID": "21fb45f0-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "changedEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3016,7 +3016,7 @@
         },
         {
             "GUID": "3111bb00-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "approvedBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3035,7 +3035,7 @@
         },
         {
             "GUID": "3bc6d1c0-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "submittedBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3054,7 +3054,7 @@
         },
         {
             "GUID": "8dd8f380-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "notificationForEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3073,7 +3073,7 @@
         },
         {
             "GUID": "a7a76580-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "sentBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3092,7 +3092,7 @@
         },
         {
             "GUID": "b6d4bdf0-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "sentTo",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3111,7 +3111,7 @@
         },
         {
             "GUID": "e7d59a50-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "messageForEvent",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3130,7 +3130,7 @@
         },
         {
             "GUID": "f8dedeb0-cfb3-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "sentBy",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3149,7 +3149,7 @@
         },
         {
             "GUID": "04615790-cfb4-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "sentTo",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3168,7 +3168,7 @@
         },
         {
             "GUID": "31106600-cfb4-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "inviteRole",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3187,7 +3187,7 @@
         },
         {
             "GUID": "58ab8f00-cfb4-11e6-add4-7791adaf3c0c",
-            "name": "New Relationship",
+            "name": "settingsForUser",
             "description": "",
             "comments": "",
             "relationshipType": "Foreign Key",
@@ -3325,108 +3325,108 @@
                 "erd": [
                     {
                         "GUID": "cc3b9530-cdf4-11e6-a00c-5d84e2ab71aa",
-                        "x": 752,
-                        "y": 292,
+                        "x": 309,
+                        "y": 294,
                         "width": 193,
-                        "height": 91
+                        "height": 43
                     },
                     {
                         "GUID": "e9ad1e90-cdf4-11e6-a00c-5d84e2ab71aa",
-                        "x": 755,
-                        "y": 72,
-                        "width": 188,
-                        "height": 93
+                        "x": 50,
+                        "y": 594,
+                        "width": 193,
+                        "height": 43
                     },
                     {
                         "GUID": "00e6b4e0-cdf5-11e6-a00c-5d84e2ab71aa",
-                        "x": 1054,
-                        "y": 120,
-                        "width": 194,
-                        "height": 102
+                        "x": 309,
+                        "y": 737,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "db7ef460-cdf9-11e6-a8a6-e58229606181",
-                        "x": 441,
-                        "y": 563,
-                        "width": 201,
-                        "height": 100
+                        "x": 309,
+                        "y": 444,
+                        "width": 193,
+                        "height": 43
                     },
                     {
                         "GUID": "e907c490-cdf9-11e6-a8a6-e58229606181",
-                        "x": 752,
-                        "y": 510,
-                        "width": 193,
-                        "height": 89
+                        "x": 827,
+                        "y": 294,
+                        "width": 201,
+                        "height": 85
                     },
                     {
                         "GUID": "cf4f7d30-cdfa-11e6-a8a6-e58229606181",
-                        "x": 1057,
-                        "y": 391,
-                        "width": 200,
-                        "height": 100
+                        "x": 568,
+                        "y": 294,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "2ef91520-cdfb-11e6-a8a6-e58229606181",
-                        "x": 443,
-                        "y": 388,
-                        "width": 200,
-                        "height": 100
+                        "x": 1086,
+                        "y": 594,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "f835d8f0-cdfc-11e6-a8a6-e58229606181",
-                        "x": 442,
-                        "y": 748,
-                        "width": 200,
-                        "height": 100
+                        "x": 827,
+                        "y": 50,
+                        "width": 210,
+                        "height": 85
                     },
                     {
                         "GUID": "074860f0-cdfe-11e6-a8a6-e58229606181",
-                        "x": 40,
-                        "y": 267,
-                        "width": 200,
-                        "height": 100
+                        "x": 50,
+                        "y": 444,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "ad3815a0-cdfe-11e6-a8a6-e58229606181",
-                        "x": 752,
-                        "y": 745,
-                        "width": 202,
-                        "height": 133
+                        "x": 1345,
+                        "y": 294,
+                        "width": 246,
+                        "height": 113
                     },
                     {
                         "GUID": "0a44bb90-cdff-11e6-a8a6-e58229606181",
-                        "x": 1057,
-                        "y": 633,
-                        "width": 200,
-                        "height": 100
+                        "x": 1086,
+                        "y": 294,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "9f6420c0-ce00-11e6-a8a6-e58229606181",
-                        "x": 1057,
-                        "y": 877,
-                        "width": 200,
-                        "height": 100
+                        "x": 1345,
+                        "y": 50,
+                        "width": 193,
+                        "height": 57
                     },
                     {
                         "GUID": "01ed31f0-ce01-11e6-a8a6-e58229606181",
-                        "x": 1057,
-                        "y": 745,
-                        "width": 200,
-                        "height": 100
+                        "x": 1345,
+                        "y": 444,
+                        "width": 224,
+                        "height": 85
                     },
                     {
                         "GUID": "d7b855d0-ce01-11e6-a8a6-e58229606181",
-                        "x": 597,
-                        "y": 962,
-                        "width": 200,
-                        "height": 100
+                        "x": 1086,
+                        "y": 50,
+                        "width": 201,
+                        "height": 57
                     },
                     {
                         "GUID": "635db1c0-ce02-11e6-a8a6-e58229606181",
-                        "x": 40,
-                        "y": 41,
-                        "width": 200,
-                        "height": 100,
+                        "x": 594,
+                        "y": 725,
+                        "width": 193,
+                        "height": 43,
                         "color": {
                             "hsl": {
                                 "h": 0,
@@ -3453,10 +3453,10 @@
                     },
                     {
                         "GUID": "67173750-ce02-11e6-a8a6-e58229606181",
-                        "x": 345,
-                        "y": 41,
-                        "width": 200,
-                        "height": 100,
+                        "x": 1345,
+                        "y": 594,
+                        "width": 193,
+                        "height": 71,
                         "color": {
                             "hsl": {
                                 "h": 0,
@@ -3483,10 +3483,10 @@
                     },
                     {
                         "GUID": "c9b18690-ce02-11e6-a8a6-e58229606181",
-                        "x": 344,
-                        "y": 162,
-                        "width": 200,
-                        "height": 100,
+                        "x": 1112,
+                        "y": 724,
+                        "width": 193,
+                        "height": 43,
                         "color": {
                             "hsl": {
                                 "h": 0,
@@ -3513,17 +3513,17 @@
                     },
                     {
                         "GUID": "0114aca0-ce4b-11e6-a8a6-e58229606181",
-                        "x": 40,
-                        "y": 475,
-                        "width": 207,
-                        "height": 137
+                        "x": 309,
+                        "y": 594,
+                        "width": 193,
+                        "height": 127
                     },
                     {
                         "GUID": "539e5500-cf1f-11e6-b2db-7dd550230cfe",
-                        "x": 40,
-                        "y": 641,
-                        "width": 209,
-                        "height": 194,
+                        "x": 568,
+                        "y": 50,
+                        "width": 232,
+                        "height": 183,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3550,10 +3550,10 @@
                     },
                     {
                         "GUID": "7a828a10-cf1f-11e6-b2db-7dd550230cfe",
-                        "x": 40,
-                        "y": 886,
-                        "width": 200,
-                        "height": 100,
+                        "x": 309,
+                        "y": 50,
+                        "width": 193,
+                        "height": 43,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3580,17 +3580,17 @@
                     },
                     {
                         "GUID": "f95a0520-cf92-11e6-add4-7791adaf3c0c",
-                        "x": 441,
-                        "y": 1113,
-                        "width": 200,
-                        "height": 100
+                        "x": 568,
+                        "y": 444,
+                        "width": 236,
+                        "height": 85
                     },
                     {
                         "GUID": "ab8690f0-cfb2-11e6-add4-7791adaf3c0c",
-                        "x": 41,
-                        "y": 1031,
-                        "width": 200,
-                        "height": 100,
+                        "x": 1086,
+                        "y": 444,
+                        "width": 230,
+                        "height": 99,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3617,10 +3617,10 @@
                     },
                     {
                         "GUID": "693f71c0-cfb3-11e6-add4-7791adaf3c0c",
-                        "x": 40,
-                        "y": 1189,
-                        "width": 200,
-                        "height": 100,
+                        "x": 827,
+                        "y": 444,
+                        "width": 193,
+                        "height": 85,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3647,10 +3647,10 @@
                     },
                     {
                         "GUID": "cd31fe00-cfb3-11e6-add4-7791adaf3c0c",
-                        "x": 41,
-                        "y": 1327,
-                        "width": 200,
-                        "height": 100,
+                        "x": 50,
+                        "y": 50,
+                        "width": 193,
+                        "height": 85,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3677,10 +3677,10 @@
                     },
                     {
                         "GUID": "15110a40-cfb4-11e6-add4-7791adaf3c0c",
-                        "x": 287,
-                        "y": 1415,
-                        "width": 200,
-                        "height": 100,
+                        "x": 50,
+                        "y": 737,
+                        "width": 193,
+                        "height": 57,
                         "color": {
                             "hsl": {
                                 "h": 45.18218623481781,
@@ -3707,10 +3707,10 @@
                     },
                     {
                         "GUID": "38c5d150-cfb4-11e6-add4-7791adaf3c0c",
-                        "x": 1059,
-                        "y": 256,
-                        "width": 200,
-                        "height": 100
+                        "x": 50,
+                        "y": 294,
+                        "width": 193,
+                        "height": 57
                     }
                 ],
                 "collapsedNodes": [],
