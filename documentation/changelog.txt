@@ -1,0 +1,20 @@
+version 1.0
+===========
+
+deviations from design - models:
+removed USER_ROLES many-to-many relationship in place of USER having a collection of ROLE
+role name is not an enum
+added created_by field to role
+added created_by field to league_type
+added added_by field to league_team
+made LEAGUE and AGE_GROUP required in RULE
+made SHORT_NAME required in ORGANIZATION
+changed GPS_LOCATOR in FACILITY to LATITUDE and LONGITUDE
+added CREATED_DATE to MESSAGE
+added UNITS to FIELD_SIZES
+
+deviations from design - routes:
+added delete all users to /users path
+added get method for /clubMembers path
+renamed /club_member/:clubId path to /club_member/findClubMembers/:clubId
+renamed /club_member/:userId path to /club_member/findClubMemberships/:userId
