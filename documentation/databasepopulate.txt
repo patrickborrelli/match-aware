@@ -1,0 +1,192 @@
+USERS:
+
+{
+	"username": "stevenhawk",
+	"password": "1234",
+	"first_name": "Steven",
+	"last_name": "Hawkings",
+	"mobile": "777-999-0909",
+	"email_address": "stevenhawk@me.com"
+}
+
+{
+	"username": "aguth",
+	"password": "1234",
+	"first_name": "Arlo",
+	"last_name": "Guthrie",
+	"mobile": "777-999-0909",
+	"email_address": "arlo@me.com"
+}
+
+{
+	"username": "wguth",
+	"password": "1234",
+	"first_name": "Woodie",
+	"last_name": "Guthrie",
+	"mobile": "777-999-0909",
+	"email_address": "wood@me.com"
+}
+
+
+CLUBS:
+{
+	"name": "Toms River FC",
+	"short_name": "TRFC"
+}
+
+{
+	"name": "Toms River Independent Club",
+	"short_name": "TRIC"
+}
+
+
+CLUBMEMBERS:
+{
+	"club": "58740738af7c505298b3a29c", 
+	"user": "5874068eaf7c505298b3a296"
+}
+
+{
+	"club": "5874086fbd06e927940fa0e7", 
+	"user": "58740697af7c505298b3a297"
+}
+
+{
+	"club": "58740738af7c505298b3a29c", 
+	"user": "58740697af7c505298b3a297"
+}
+
+
+{
+	"club": "5874086fbd06e927940fa0e7", 
+	"user": "5874069daf7c505298b3a298"
+}
+
+AGEGROUPS:
+{
+	"birth_year": "2011", 
+	"soccer_year": "U6",
+	"name": "2011/U6"
+}
+
+{
+	"birth_year": "2010", 
+	"soccer_year": "U7",
+	"name": "2010/U7"
+}
+
+{
+	"birth_year": "2009", 
+	"soccer_year": "U8",
+	"name": "2009/U8"
+}
+
+{
+	"birth_year": "2008", 
+	"soccer_year": "U9",
+	"name": "2008/U9"
+}
+
+EVENTTYPES:
+[
+{
+	"name": "LEAGUE_GAME"
+},
+
+{
+	"name": "TOURNAMENT_GAME"
+},
+
+{
+	"name": "TEAM_TRAINING"
+},
+
+{
+	"name": "OPEN_TRAINING"
+},
+
+{
+	"name": "PRACTICE"
+}
+]
+
+FIELDSIZES:
+[
+	{
+		"name": "Mini-Field",
+		"min_length": "20",
+		"max_length": "35",
+		"min_width": "15",
+		"max_width": "25",
+		"unit": "YARDS"
+	},
+	
+	{
+		"name": "Developmental",
+		"min_length": "45",
+		"max_length": "60",
+		"min_width": "30",
+		"max_width": "45",
+		"unit": "YARDS"
+	},
+	
+	{
+		"name": "Small-Sided",
+		"min_length": "70",
+		"max_length": "80",
+		"min_width": "35",
+		"max_width": "50",
+		"unit": "YARDS"
+	},
+
+	{
+		"name": "Large-Sided",
+		"min_length": "100",
+		"max_length": "130",
+		"min_width": "50",
+		"max_width": "100",
+		"unit": "YARDS"
+	}
+]
+
+LEAGUETYPES:
+[
+{
+	"name": "IN_HOUSE"
+},
+
+{
+	"name": "RECREATIONAL"
+},
+
+{
+	"name": "TRAVEL"
+},
+
+{
+	"name": "ADULT"
+},
+{
+	"name": "HIGH_SCHOOL"
+}
+]
+
+RESCHEDULERULES:
+[
+	{
+		"timespan_days": "7",
+		"consequence": "FORFEIT",
+		"fine": "0"
+	},
+	
+	{
+		"timespan_days": "14",
+		"consequence": "FORFEIT_FINE",
+		"fine": "125"
+	},
+	{
+		"timespan_days": "21",
+		"consequence": "FORFEIT_FINE",
+		"fine": "100"
+	}
+]
