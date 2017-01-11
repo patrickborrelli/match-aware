@@ -12,9 +12,29 @@ made SHORT_NAME required in ORGANIZATION
 changed GPS_LOCATOR in FACILITY to LATITUDE and LONGITUDE
 added CREATED_DATE to MESSAGE
 added UNITS to FIELD_SIZES
+added gender and age_group fields to TEAM
+added GENDER data model
+changed ACCESS_REQUEST owner field to approver
 
 deviations from design - routes:
 added delete all users to /users path
 added get method for /clubMembers path
-renamed /club_member/:clubId path to /club_member/findClubMembers/:clubId
-renamed /club_member/:userId path to /club_member/findClubMemberships/:userId
+renamed /club_members/:clubId path to /club_members/findClubMembers/:clubId
+renamed /club_members/:userId path to /club_members/findClubMemberships/:userId
+added delete to team_coach by id /team_coaches/:team_coachId
+modified path for retrieving all teams associated with a coach to /team_coaches/findCoachesTeams/:coachId
+modified path for retrieving all coaches associated with a team to /team_coaches/findTeamsCoaches/:teamId
+renamed /access_request/findByReviewer to /access_request/findByApprover
+modified path for retrieving all teams associated with a league to /league_teams/findLeagueTeams/:leagueId
+modified path for retrieving all leagues associated with a team to /league_teams/findLeagueTeams/:teamId
+
+
+
+
+
+
+
+
+Issues:
+may need to separate players and parents into separate type to avoid counting parents on team rosters.
+need to associate fields/facilities with clubs...many to many?
