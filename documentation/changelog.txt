@@ -15,6 +15,10 @@ added UNITS to FIELD_SIZES
 added gender and age_group fields to TEAM
 added GENDER data model
 changed ACCESS_REQUEST owner field to approver
+added replaces field of type EVENT to EVENT to keep history of approved change requests
+added visible field of type Boolean to MESSAGE with the intent that a user can hide or delete messages.
+
+
 
 deviations from design - routes:
 added delete all users to /users path
@@ -27,8 +31,9 @@ modified path for retrieving all coaches associated with a team to /team_coaches
 renamed /access_request/findByReviewer to /access_request/findByApprover
 modified path for retrieving all teams associated with a league to /league_teams/findLeagueTeams/:leagueId
 modified path for retrieving all leagues associated with a team to /league_teams/findLeagueTeams/:teamId
-
-
+modified path for retrieving all organizations working for the club to /organizations/findByClub/:clubId
+deferred /users/facebook and /users/facebook/callback paths to later release
+depricated /users/findByClub/:clubId path as a duplicate in the /club_members path
 
 
 
@@ -38,3 +43,8 @@ modified path for retrieving all leagues associated with a team to /league_teams
 Issues:
 may need to separate players and parents into separate type to avoid counting parents on team rosters.
 need to associate fields/facilities with clubs...many to many?
+add findUsersById?
+conflicts need to take into account field.
+need relationship between referee and referee assignor
+decide on and implement a security model for api paths
+add path to add staff to organization by ID
