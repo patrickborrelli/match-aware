@@ -987,3 +987,230 @@ USERSETTINGS:
 		"schedule_view_range": "FULL"
 	}
 ]
+
+
+ORGANIZATIONS:
+[
+	{
+		"name": "Beyond 90:00 Soccer Training", 
+		"short_name": "B90",
+		"administrator": "58757f014ea4557e08732395",
+		"club_affiliation": ["58740738af7c505298b3a29c"],
+		"staff": ["58757f0a4ea4557e08732396"]
+	}, 
+	{
+		"name": "Celtic Elite Training", 
+		"short_name": "Celtic",
+		"administrator": "58757f014ea4557e08732395",
+		"club_affiliation": ["5874086fbd06e927940fa0e7"],
+		"staff": ["58757f1c4ea4557e08732398", "58757f394ea4557e0873239b"]
+	}
+]
+
+
+
+EVENTS:
+[
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3468", 
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "1",
+		"start_time": "1700",
+		"end_time": "1830",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3469", 
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "1",
+		"start_time": "1830",
+		"end_time": "2000",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3469", 
+		"officials": ["58757f244ea4557e08732399","58757f394ea4557e0873239b"],
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "2",
+		"start_time": "1830",
+		"end_time": "2000",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": false,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3469", 
+		"officials": ["58757f244ea4557e08732399"],
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "6",
+		"date_day": "2",
+		"start_time": "1830",
+		"end_time": "2000",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": false,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3469", 
+		"officials": ["58757f394ea4557e0873239b"],
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "4",
+		"start_time": "1830",
+		"end_time": "2000",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": false,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437342", 
+		"home_team": "5875717374ba3d56803c346a", 
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"organization": "587680f0a486a37a88eceb94",
+		"trainers": ["58757f1c4ea4557e08732398"],
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "15",
+		"start_time": "1200",
+		"end_time": "1330",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437342", 
+		"home_team": "5875717374ba3d56803c3467", 
+		"min_age_group": "58755891fa5ec77c685c38da",
+		"organization": "587680f0a486a37a88eceb94",
+		"trainers": ["58757f394ea4557e0873239b"],
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "15",
+		"start_time": "1330",
+		"end_time": "1500",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}, 
+	{
+		"type": "58746be1bc80ae7aa8437342", 
+		"home_team": "5875717374ba3d56803c346b", 
+		"min_age_group": "58755891fa5ec77c685c38d8",
+		"organization": "587680f0a486a37a88eceb94",
+		"trainers": ["58757f0a4ea4557e08732396","58757f394ea4557e0873239b"],
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "15",
+		"start_time": "1500",
+		"end_time": "1630",
+		"field": "5875b6c3e094311efc886b3b",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	}
+]
+
+
+CHANGEREQUESTS:
+[
+	{
+		"original_event": "5876ea771d45bd77f05dc225", 
+		"changed_event": "5876fadaab69b92304096338",
+		"status": "SUBMITTED",
+		"text": "Can I move Monday's practice to Wednesday at 6:30pm? Any field is fine, a lot of my team will be running late this week.",
+		"approver": "58757ef74ea4557e08732394",
+		"submitter": "58757f0a4ea4557e08732396"
+	}, 
+	{
+		"original_event": "5876f37aa4f8ec0ae0db32f2", 
+		"changed_event": "5876f37aa4f8ec0ae0db32f2",
+		"status": "SUBMITTED",
+		"text": "Can we start this session at 4:30 instead of 3? Coach Gillen and I are both unavailable at 3",
+		"approver": "58757ef74ea4557e08732394",
+		"submitter": "58757f394ea4557e0873239b"
+	}
+]
+
+
+MESSAGES:
+[
+	{
+		"event": "5876ea881d45bd77f05dc227", 
+		"text": "Opposing team forgot their cards and will be late...visiting team has 30 minutes.",
+		"sender": "58757eee4ea4557e08732393",
+		"visible": true,
+		"recipient": "58757f244ea4557e08732399"			
+	}, 
+	{
+		"event": "5876ea881d45bd77f05dc227", 
+		"text": "Opposing team forgot their cards and will be late...visiting team has 30 minutes.",
+		"sender": "58757eee4ea4557e08732393",
+		"visible": true,
+		"recipient": "58757f394ea4557e0873239b"
+	} ,
+	{
+		"event": "5876ea881d45bd77f05dc227", 
+		"text": "Make sure to wear white jerseys but BRING BLUE as well.",
+		"sender": "58757f0a4ea4557e08732396",
+		"visible": true,
+		"recipient": "58757f244ea4557e08732399"
+	} ,
+	{
+		"event": "5876ea881d45bd77f05dc227", 
+		"text": "Make sure to wear white jerseys but BRING BLUE as well.",
+		"sender": "58757f0a4ea4557e08732396",
+		"visible": true,
+		"recipient": "58757f414ea4557e0873239c"
+	}
+]
+
+
+NOTIFICATIONS:
+[
+	{
+		"status": "PENDING", 
+		"type": "ASSIGNMENT",
+		"event": "5876f367a4f8ec0ae0db32f0",
+		"text": "New training session assignment.",
+		"position": "ASSISTANT",
+		"sender": "58757f014ea4557e08732395",
+		"recipient": "58757f394ea4557e0873239b"			
+	}, 
+	{
+		"status": "ACCEPTED", 
+		"type": "ASSIGNMENT",
+		"event": "5876f367a4f8ec0ae0db32f0",
+		"text": "I can take this session.",
+		"position": "ASSISTANT",
+		"sender": "58757f394ea4557e0873239b",
+		"recipient": "58757f014ea4557e08732395"
+	} 
+]
+
+
+
+
