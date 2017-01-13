@@ -1020,7 +1020,7 @@ ORGANIZATIONS:
 ]
 
 
-
+5875b6c3e094311efc886b3a SC14
 EVENTS:
 [
 	{
@@ -1141,6 +1141,34 @@ EVENTS:
 		"end_time": "1630",
 		"field": "5875b6c3e094311efc886b3b",
 		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	},
+	{
+		"type": "58746be1bc80ae7aa8437344", 
+		"home_team": "5875717374ba3d56803c3468", 
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "5",
+		"date_day": "1",
+		"start_time": "1700",
+		"end_time": "1830",
+		"field": "5875b6c3e094311efc886b35",
+		"recurring": true,
+		"status": "SCHEDULED",
+		"creator": "58757ef74ea4557e08732394"
+	},
+	{
+		"type": "58746be1bc80ae7aa8437340", 
+		"home_team": "5875717374ba3d56803c3468", 
+		"min_age_group": "58755891fa5ec77c685c38dd",
+		"date_year": "2017",
+		"date_month": "4",
+		"date_day": "30",
+		"start_time": "1200",
+		"end_time": "1330",
+		"field": "5875b6c3e094311efc886b35",
+		"recurring": false,
 		"status": "SCHEDULED",
 		"creator": "58757ef74ea4557e08732394"
 	}
