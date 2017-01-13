@@ -17,7 +17,9 @@ added GENDER data model
 changed ACCESS_REQUEST owner field to approver
 added replaces field of type EVENT to EVENT to keep history of approved change requests
 added visible field of type Boolean to MESSAGE with the intent that a user can hide or delete messages.
-
+removed TEAM_PLAYER and TEAM_COACH and added TEAM_MEMBER
+split PARENT and PLAYER into two separate roles
+added ROLE to TEAM_MEMBER,allowing users a different role on multiple teams (coach on one parent on another)
 
 
 deviations from design - routes:
@@ -34,6 +36,7 @@ modified path for retrieving all leagues associated with a team to /league_teams
 modified path for retrieving all organizations working for the club to /organizations/findByClub/:clubId
 deferred /users/facebook and /users/facebook/callback paths to later release
 depricated /users/findByClub/:clubId path as a duplicate in the /club_members path
+removed /team_players and /team_coaches paths and added /team_members path
 
 
 
@@ -41,7 +44,6 @@ depricated /users/findByClub/:clubId path as a duplicate in the /club_members pa
 
 
 Issues:
-may need to separate players and parents into separate type to avoid counting parents on team rosters.
 need to associate fields/facilities with clubs...many to many?
 add findUsersById?
 conflicts need to take into account field.
