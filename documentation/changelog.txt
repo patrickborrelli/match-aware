@@ -20,6 +20,8 @@ added visible field of type Boolean to MESSAGE with the intent that a user can h
 removed TEAM_PLAYER and TEAM_COACH and added TEAM_MEMBER
 split PARENT and PLAYER into two separate roles
 added ROLE to TEAM_MEMBER,allowing users a different role on multiple teams (coach on one parent on another)
+added club_affiliation field to FACILITY, collection
+added model for FIELD_AVAILABILITY with relationship to FIELD
 
 
 deviations from design - routes:
@@ -44,9 +46,7 @@ removed /team_players and /team_coaches paths and added /team_members path
 
 
 Issues:
-need to associate fields/facilities with clubs...many to many?
-add findUsersById?
-conflicts need to take into account field.
-need relationship between referee and referee assignor
-decide on and implement a security model for api paths
+need relationship between referee and referee assignor - DEFERRED
+decide on and implement a security model for api paths - POSTPONED
 add path to add staff to organization by ID
+modify GETs to allow req.query, with specific params listed
