@@ -50,3 +50,30 @@ need relationship between referee and referee assignor - DEFERRED
 decide on and implement a security model for api paths - POSTPONED
 add path to add staff to organization by ID
 modify GETs to allow req.query, with specific params listed
+move all asynchronous calls out of appDataLoad so they can be called by other controllers.
+need scrolling on assign, request, and invite tabs
+add filtering to list of pending invites
+add default image to club logo
+get teams by club
+get rid of reschedule rules as a model and add those fields to league
+add built in sort to all GET paths
+add pretty text for all types, enums, etc
+make league select for team creation a multiple select
+edit dialog not populated with ng-model data even though it exists.
+need to add intermission length to rules
+add max roster to rules
+add file selectors, figure out how to upload and add to app/images
+change addon for field sizes to yards
+missing ball size from add rule
+method variable in facilityForm is being set properly in the $watch but not when the form is being submitted?
+NEED FORM VALIDATION
+
+
+Unresolved
+=========================
+Updating user roles dialog, must uncheck and recheck all current roles otherwise they are recorded as false
+modify api, should token be nullified/deleted/inactivated on logout?
+revisit bootstrap-select, installed on the wrong app
+make club and user requred in REST API clubmember
+ORGANIZATIONS not implemented
+
