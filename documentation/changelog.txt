@@ -22,6 +22,7 @@ split PARENT and PLAYER into two separate roles
 added ROLE to TEAM_MEMBER,allowing users a different role on multiple teams (coach on one parent on another)
 added club_affiliation field to FACILITY, collection
 added model for FIELD_AVAILABILITY with relationship to FIELD
+added fields for closure (boolean), closure_type (enum, [CURRENT, FUTURE]), close_start(number) and close_end(number) to both facility and field
 
 
 deviations from design - routes:
@@ -67,6 +68,10 @@ change addon for field sizes to yards
 missing ball size from add rule
 method variable in facilityForm is being set properly in the $watch but not when the form is being submitted?
 NEED FORM VALIDATION
+no mechanism to add field sizes...likely add to field manager tools rather than club admin
+need some way to reopen fields, view details of closures
+add text field to closures
+need to move closures out to their own collection to handle multiple scheduled closures for the same field and retain a closure history
 
 
 Unresolved
