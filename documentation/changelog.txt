@@ -2,6 +2,7 @@ version 1.0
 ===========
 
 deviations from design - models:
+======================================
 removed USER_ROLES many-to-many relationship in place of USER having a collection of ROLE
 role name is not an enum
 added created_by field to role
@@ -26,6 +27,7 @@ added fields for closure (boolean), closure_type (enum, [CURRENT, FUTURE]), clos
 
 
 deviations from design - routes:
+=============================================
 added delete all users to /users path
 added get method for /clubMembers path
 renamed /club_members/:clubId path to /club_members/findClubMembers/:clubId
@@ -43,12 +45,11 @@ removed /team_players and /team_coaches paths and added /team_members path
 
 
 
-
-
-
-Issues:
-need relationship between referee and referee assignor - DEFERRED
+Issues
+==========================
+need relationship between referee and referee assignor
 decide on and implement a security model for api paths - POSTPONED
+need validation on all entry (preventing duplicate entries of users, etc
 add path to add staff to organization by ID
 modify GETs to allow req.query, with specific params listed
 move all asynchronous calls out of appDataLoad so they can be called by other controllers.
@@ -72,13 +73,15 @@ no mechanism to add field sizes...likely add to field manager tools rather than 
 need some way to reopen fields, view details of closures
 add text field to closures
 need to move closures out to their own collection to handle multiple scheduled closures for the same field and retain a closure history
-
-
-Unresolved
-=========================
-Updating user roles dialog, must uncheck and recheck all current roles otherwise they are recorded as false
+need to add smart cascading delete logic into API
 modify api, should token be nullified/deleted/inactivated on logout?
-revisit bootstrap-select, installed on the wrong app
 make club and user requred in REST API clubmember
 ORGANIZATIONS not implemented
+
+
+
+Unresolved Bugs
+=========================
+Updating user roles dialog, must uncheck and recheck all current roles otherwise they are recorded as false - possible solution, use root scope
+revisit bootstrap-select, installed on the wrong app
 
