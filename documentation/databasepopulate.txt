@@ -6,9 +6,8 @@ USERS:
 		"password": "y7y54ptr",
 		"first_name": "Patrick",
 		"last_name": "Borrelli",
-		"mobile": "777-999-0909",
-		"email_address": "registrar@tomsriverfc.com",
-		"roles": ["5875752c74ba3d56803c346d", "5875753474ba3d56803c346e", "5875753f74ba3d56803c3470", "5875753a74ba3d56803c346f"]
+		"mobile": "7325735766",
+		"email_address": "registrar@tomsriverfc.com"
 	},
 
 	{
@@ -17,8 +16,7 @@ USERS:
 		"first_name": "Christopher",
 		"last_name": "Peto",
 		"mobile": "777-999-0909",
-		"email_address": "peto@tomsriverfc.com",
-		"roles": ["5875753474ba3d56803c346e"]
+		"email_address": "peto@tomsriverfc.com"
 	},
 	{
 		"username": "doneill",
@@ -26,8 +24,7 @@ USERS:
 		"first_name": "Darren",
 		"last_name": "ONeill",
 		"mobile": "777-999-0909",
-		"email_address": "darren@tomsriverfc.com",
-		"roles": ["5875753f74ba3d56803c3470"]
+		"email_address": "darren@tomsriverfc.com"
 	},
 	{
 		"username": "tgillen",
@@ -35,8 +32,7 @@ USERS:
 		"first_name": "Ted",
 		"last_name": "Gillen",
 		"mobile": "777-999-0909",
-		"email_address": "teddy@tomsriverfc.com",
-		"roles": ["5875754474ba3d56803c3471"]
+		"email_address": "teddy@tomsriverfc.com"
 	},
 	{
 		"username": "stony",
@@ -44,8 +40,7 @@ USERS:
 		"first_name": "Russell",
 		"last_name": "Stone",
 		"mobile": "777-999-0909",
-		"email_address": "russell@tomsriverfc.com",
-		"roles": ["5875753a74ba3d56803c346f"]
+		"email_address": "russell@tomsriverfc.com"
 	},
 	{
 		"username": "marcy",
@@ -53,8 +48,7 @@ USERS:
 		"first_name": "Marcy",
 		"last_name": "Pokryva",
 		"mobile": "777-999-0909",
-		"email_address": "marcy@tomsriverfc.com",
-		"roles": ["5875754a74ba3d56803c3472"]
+		"email_address": "marcy@tomsriverfc.com"
 	},
 	{
 		"username": "darian",
@@ -62,8 +56,7 @@ USERS:
 		"first_name": "Darian",
 		"last_name": "Low",
 		"mobile": "777-999-0909",
-		"email_address": "darian@tomsriverfc.com",
-		"roles": ["5875754e74ba3d56803c3473"]
+		"email_address": "darian@tomsriverfc.com"
 	},
 	{
 		"username": "maggie",
@@ -71,8 +64,7 @@ USERS:
 		"first_name": "Margaret",
 		"last_name": "Borrelli",
 		"mobile": "777-999-0909",
-		"email_address": "margaret@tomsriverfc.com",
-		"roles": ["5875755374ba3d56803c3474"]
+		"email_address": "margaret@tomsriverfc.com"
 	},
 	{
 		"username": "fiona",
@@ -80,8 +72,7 @@ USERS:
 		"email_address": "margaret@tomsriverfc.com",
 		"mobile": "777-999-0909",
 		"last_name": "Borrelli",
-		"first_name": "Fiona",
-		"roles": ["5875755374ba3d56803c3474"]
+		"first_name": "Fiona"
 	},
 	{
 		"username": "claireb",
@@ -89,8 +80,7 @@ USERS:
 		"email_address": "margaret@tomsriverfc.com",
 		"mobile": "777-999-0909",
 		"last_name": "Borrelli",
-		"first_name": "Claire",
-		"roles": ["5875755374ba3d56803c3474"]
+		"first_name": "Claire"
 	},
 	{
 		"username": "emmy",
@@ -98,8 +88,7 @@ USERS:
 		"email_address": "margaret@tomsriverfc.com",
 		"mobile": "777-999-0909",
 		"last_name": "Rappisi",
-		"first_name": "Emily",
-		"roles": ["5875755374ba3d56803c3474"]
+		"first_name": "Emily"
 	},
 	{
 		"username": "taytay",
@@ -107,8 +96,7 @@ USERS:
 		"email_address": "margaret@tomsriverfc.com",
 		"mobile": "777-999-0909",
 		"last_name": "Yajcaji",
-		"first_name": "Taylor",
-		"roles": ["5875755374ba3d56803c3474"]
+		"first_name": "Taylor"
 	}
 ]
 
@@ -343,46 +331,55 @@ RESCHEDULERULES:
 
 LEAGUES:
 [
+	
+	{
+		"name": "Toms River FC Clinic",
+		"short_name": "Clinic",
+		"min_age_group": "588bbfa75f6eab475010d2ea",
+		"max_age_group": "588bbfa75f6eab475010d2ec",
+		"type": "588bc1ee410aa427fcf8b0af"
+	},
 	{
 		"name": "Ocean County Recreational Soccer",
 		"short_name": "OCR",
-		"min_age_group": "58755891fa5ec77c685c38da",
-    	"max_age_group": "58755891fa5ec77c685c38e0",
-        "type": "587558e3fa5ec77c685c38e8",
-    	"reschedule_rule": "587480584bd4857590409956"
-	},
-	{
-		"name": "Toms River FC Clinic In-House",
-		"short_name": "Clinic",
-		"min_age_group": "58755891fa5ec77c685c38d7",
-		"max_age_group": "58755891fa5ec77c685c38d9",
-		"type": "587558e3fa5ec77c685c38e7"
+		"min_age_group": "588bbfa75f6eab475010d2ed",
+    	"max_age_group": "588bbfa75f6eab475010d2f3",
+        "type": "588bc1ee410aa427fcf8b0b0"
 	},
 	{
 		"name": "Monmouth Ocean Soccer Association",
 		"short_name": "MOSA",
-		"min_age_group": "58755891fa5ec77c685c38dc",
-		"max_age_group": "58755891fa5ec77c685c38e6",
-		"type": "587558e3fa5ec77c685c38e9",
-		"reschedule_rule": "587480584bd4857590409956"
+		"min_age_group": "588bbfa75f6eab475010d2ee",
+		"max_age_group": "588bbfa75f6eab475010d2f9",
+		"type": "588bc1ee410aa427fcf8b0b1",
+		"reschedule_time": 14,
+		"reschedule_consequence": "FORFEIT",
+		"reschedule_fine": 0
 	},	
 	{
 		"name": "Jersey Area Girls Soccer",
 		"short_name": "JAGS",
-		"min_age_group": "58755891fa5ec77c685c38dc",
-    	"max_age_group": "58755891fa5ec77c685c38e6",
-        "type": "587558e3fa5ec77c685c38e9",
-    	"reschedule_rule": "587480584bd4857590409956"
+		"min_age_group": "588bbfa75f6eab475010d2ee",
+    	"max_age_group": "588bbfa75f6eab475010d2f9",
+        "type": "588bc1ee410aa427fcf8b0b1",
+        "reschedule_time": 14,
+		"reschedule_consequence": "FORFEIT_FINE",
+		"reschedule_fine": 125
 	},
 	{
 		"name": "Eastern Development Program",
 		"short_name": "EDP",
-		"min_age_group": "58755891fa5ec77c685c38dc",
-    	"max_age_group": "58755891fa5ec77c685c38e6",
-        "type": "587558e3fa5ec77c685c38e9",
-    	"reschedule_rule": "587480584bd4857590409956"
+		"min_age_group": "588bbfa75f6eab475010d2ee",
+    	"max_age_group": "588bbfa75f6eab475010d2f9",
+        "type": "588bc1ee410aa427fcf8b0b1",
+        "reschedule_time": 14,
+		"reschedule_consequence": "FORFEIT_FINE",
+		"reschedule_fine": 150
 	}
 ]
+
+
+
 
 RULES:
 [
@@ -479,33 +476,39 @@ TEAMS:
 [
 	{
 		"name": "Milan",
-		"gender": "58756f3533e5136954689cf7",
-		"age_group": "58755891fa5ec77c685c38da"
+		"gender": "588bc441af35a118542c85bb",
+		"age_group": "588bbfa75f6eab475010d2f8",
+		"club": "588bbb7b1690ac452418b9da"
     },    
 	{
 		"name": "Napoli",
-		"gender": "58756f3533e5136954689cf7",
-		"age_group": "58755891fa5ec77c685c38dd"
+		"gender": "588bc441af35a118542c85ba",
+		"age_group": "588bbfa75f6eab475010d2f5",
+		"club": "588bbb7b1690ac452418b9da"
     }, 	
     {
 		"name": "Messi",
-		"gender": "58756f3533e5136954689cf8",
-		"age_group": "58755891fa5ec77c685c38dd"
+		"gender": "588bc441af35a118542c85bb",
+		"age_group": "588bbfa75f6eab475010d2ef",
+		"club": "588bbb7b1690ac452418b9da"
     }, 	
     {
 		"name": "Red Stars",
-		"gender": "58756f3533e5136954689cf8",
-		"age_group": "58755891fa5ec77c685c38e2"
+		"gender": "588bc441af35a118542c85ba",
+		"age_group": "588bbfa75f6eab475010d2f3",
+		"club": "588bbb7b1690ac452418b9da"
     }, 	
     {
 		"name": "Canada",
-		"gender": "58756f3533e5136954689cf8",
-		"age_group": "58755891fa5ec77c685c38d8"
+		"gender": "588bc441af35a118542c85bb",
+		"age_group": "588bbfa75f6eab475010d2ea",
+		"club": "588bbb7b1690ac452418b9da"
     }, 	
     {
 		"name": "Italy",
-		"gender": "58756f3533e5136954689cf7",
-		"age_group": "58755891fa5ec77c685c38d9"
+		"gender": "588bc441af35a118542c85ba",
+		"age_group": "588bbfa75f6eab475010d2eb",
+		"club": "588bbb7b1690ac452418b9da"
     }    
 ]
 
@@ -514,31 +517,31 @@ ROLES:
 
 [
 	{
-		"name": "CLUB_ADMIN"	5875752c74ba3d56803c346d
+		"name": "CLUB_ADMIN"	
     },    
 	{
-		"name": "FIELD_ADMIN" 	5875753474ba3d56803c346e
+		"name": "FIELD_ADMIN" 	
     }, 	
     {
-		"name": "REFEREE_ASSIGNOR"  5875753a74ba3d56803c346f
+		"name": "REFEREE_ASSIGNOR"  
     },    
     {
-		"name": "TRAINING_ADMIN"  	5875753f74ba3d56803c3470
+		"name": "TRAINING_ADMIN"  	
     },    
     {
-		"name": "COACH"				5875754474ba3d56803c3471
+		"name": "COACH"				
     },    
     {
-		"name": "TRAINER"			5875754a74ba3d56803c3472
+		"name": "TRAINER"			
     },
     {
-		"name": "REFEREE"			5875754e74ba3d56803c3473
+		"name": "REFEREE"			
     },
     {
-		"name": "PARENT"		58782bec0891b12be0366a8e
+		"name": "PARENT"		
     },
     {
-		"name": "PLAYER"		58782bf40891b12be0366a8f
+		"name": "PLAYER"		
     }    
 ]
 
@@ -644,6 +647,7 @@ FACILITES:
 	{
 		"name": "Bey Lea Complex", 
     	"short_name": "BL", 
+    	"club_affiliation": "588bbb7b1690ac452418b9da",
 		"address": "570 Bay Avenue", 
 		"city": "Toms River", 
 		"state": "NJ", 
@@ -667,6 +671,7 @@ FACILITES:
 	{
 		"name": "Oak Park Complex", 
     	"short_name": "OP", 
+    	"club_affiliation": "588bbb7b1690ac452418b9da",
 		"address": "246 Oak Avenue", 
 		"city": "Toms River", 
 		"state": "NJ", 
@@ -690,6 +695,7 @@ FACILITES:
 	{
 		"name": "Shelter Cove Complex", 
     	"short_name": "SC", 
+    	"club_affiliation": "588bbb7b1690ac452418b9da",
 		"address": "1390 Bay Avenue", 
 		"city": "Toms River", 
 		"state": "NJ", 
@@ -713,6 +719,7 @@ FACILITES:
 	{
 		"name": "Paddy O'Neill Complex", 
     	"short_name": "BL", 
+    	"club_affiliation": "588bbb7b1690ac452418b9da",
 		"address": "900 Riverwood Drive", 
 		"city": "Toms River", 
 		"state": "NJ", 
@@ -736,6 +743,7 @@ FACILITES:
 	{
 		"name": "Toms River High School East", 
     	"short_name": "TRE", 
+    	"club_affiliation": "588bbb7b1690ac452418b9da",
 		"address": "1225 Raider Way", 
 		"city": "Toms River", 
 		"state": "NJ", 
@@ -762,135 +770,147 @@ FACILITES:
 FIELDS:
 [
 	{
-		"name": "1", 
-    	"facility": "5875ae0771164c7e888e6fb2", 
-		"size": "587474471ffea81a38914eaa", 
+		"name": "BL1", 
+    	"facility": "588bc844af35a118542c85c9", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": true, 
 		"condition": 4, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": false,
 		"surface": "GRASS"
 	}, 
 	{
-		"name": "2", 
-    	"facility": "5875ae0771164c7e888e6fb2", 
-		"size": "587474471ffea81a38914eaa", 
+		"name": "BL2", 
+    	"facility": "588bc844af35a118542c85c9", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": true, 
 		"condition": 8, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": fale,
 		"surface": "GRASS"
 	}, 
 	{
-		"name": "3", 
-    	"facility": "5875ae0771164c7e888e6fb2", 
-		"size": "587474471ffea81a38914ea9", 
+		"name": "BL3", 
+    	"facility": "588bc844af35a118542c85c9", 
+		"size": "588bc161036e5a3208286e40", 
 		"lights": false, 
 		"condition": 5, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": false,
 		"surface": "GRASS"
 	}, 
 	{
-		"name": "1", 
-    	"facility": "5875ae0771164c7e888e6fb4", 
-		"size": "587474471ffea81a38914ea9", 
+		"name": "SC1", 
+    	"facility": "588bc844af35a118542c85cb", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": false, 
 		"condition": 8, 
 		"game": false,
 		"practice": true,
 		"tournament": false,
+		"training": false,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "2", 
-    	"facility": "5875ae0771164c7e888e6fb4", 
-		"size": "587474471ffea81a38914ea9", 
+		"name": "SC2", 
+    	"facility": "588bc844af35a118542c85cb", 
+		"size": "588bc161036e5a3208286e40", 
 		"lights": true, 
 		"condition": 10, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": false,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "14", 
-    	"facility": "5875ae0771164c7e888e6fb4", 
-		"size": "587474471ffea81a38914ea9", 
+		"name": "SC14", 
+    	"facility": "588bc844af35a118542c85cb", 
+		"size": "588bc161036e5a3208286e3f", 
 		"lights": false, 
 		"condition": 6, 
-		"game": true,
-		"practice": false,
-		"tournament": true,
+		"game": false,
+		"practice": true,
+		"tournament": false,
+		"training": true,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "15", 
-    	"facility": "5875ae0771164c7e888e6fb4", 
-		"size": "587474471ffea81a38914ea9", 
+		"name": "SC15", 
+    	"facility": "588bc844af35a118542c85cb", 
+		"size": "588bc161036e5a3208286e3f", 
 		"lights": false, 
 		"condition": 7, 
-		"game": true,
-		"practice": false,
-		"tournament": true,
+		"game": false,
+		"practice": true,
+		"tournament": false,
+		"training": true,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "10", 
-    	"facility": "5875ae0771164c7e888e6fb3", 
-		"size": "587474471ffea81a38914eaa", 
+		"name": "OP10", 
+    	"facility": "588bc844af35a118542c85ca", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": true, 
 		"condition": 9, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": false,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "11", 
-    	"facility": "5875ae0771164c7e888e6fb3", 
-		"size": "587474471ffea81a38914eaa", 
+		"name": "OP11", 
+    	"facility": "588bc844af35a118542c85ca", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": false, 
 		"condition": 7, 
 		"game": true,
 		"practice": false,
 		"tournament": true,
+		"training": false,
 		"surface": "GRASS"
 	},  
 	{
-		"name": "TURF", 
-    	"facility": "5875ae0771164c7e888e6fb6", 
-		"size": "587474471ffea81a38914eaa", 
+		"name": "TRETURF", 
+    	"facility": "588bc844af35a118542c85cd", 
+		"size": "588bc161036e5a3208286e41", 
 		"lights": true, 
 		"condition": 10, 
 		"game": true,
 		"practice": true,
 		"tournament": true,
+		"training": true,
 		"surface": "TURF"
 	},  
 	{
-		"name": "A", 
-    	"facility": "5875ae0771164c7e888e6fb5", 
-		"size": "587474471ffea81a38914ea8", 
+		"name": "BBA", 
+    	"facility": "588bc844af35a118542c85cc", 
+		"size": "588bc161036e5a3208286e40", 
 		"lights": true, 
 		"condition": 10, 
 		"game": true,
 		"practice": true,
 		"tournament": true,
+		"training": true,
 		"surface": "TURF"
 	},  
 	{
-		"name": "B", 
-    	"facility": "5875ae0771164c7e888e6fb5", 
-		"size": "587474471ffea81a38914ea8", 
+		"name": "BBB", 
+    	"facility": "588bc844af35a118542c85cc", 
+		"size": "588bc161036e5a3208286e40", 
 		"lights": true, 
 		"condition": 10, 
 		"game": true,
 		"practice": true,
 		"tournament": true,
+		"training": true,
 		"surface": "TURF"
 	}
 ]
@@ -1251,6 +1271,46 @@ NOTIFICATIONS:
 	} 
 ]
 
+CLUBROLES:
 
+[
+	{
+		"club": "588bbb7b1690ac452418b9da",
+		"role": "588bc660af35a118542c85c0",
+		"member": "588bb56e1690ac452418b9cd"
+	},
+	{
+		"club": "588bbb7b1690ac452418b9da",
+		"role": "588bc67aaf35a118542c85c2",
+		"member": "588bb59d1690ac452418b9d1"
+	},
+	{
+		"club": "588bbb7b1690ac452418b9da",
+		"role": "588bc675af35a118542c85c1",
+		"member": "588bb5831690ac452418b9ce"
+	}
+]
+
+
+CLOSURES:
+
+[
+	{
+		"type": "CURRENT",
+		"start": 1485607680000 ,
+		"end": 1485694800000,
+		"message": "Closed due to excessive rain"
+	},
+	{
+		"club": "588bbb7b1690ac452418b9da",
+		"role": "588bc67aaf35a118542c85c2",
+		"member": "588bb59d1690ac452418b9d1"
+	},
+	{
+		"club": "588bbb7b1690ac452418b9da",
+		"role": "588bc675af35a118542c85c1",
+		"member": "588bb5831690ac452418b9ce"
+	}
+]
 
 

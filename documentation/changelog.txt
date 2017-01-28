@@ -50,12 +50,8 @@ Issues
 need relationship between referee and referee assignor
 decide on and implement a security model for api paths - POSTPONED
 need validation on all entry (preventing duplicate entries of users, - unique validation)
-add path to add staff to organization by ID
-modify GETs to allow req.query, with specific params listed
 get teams by club
-add built in sort to all GET paths
 need to add smart cascading delete logic into API
-modify api,should token be nullified/deleted/inactivated on logout?
 
 ORGANIZATIONS not implemented
 on authenticated user with no current club roles, make sure to display any pending access requests with the option of resending
