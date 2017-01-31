@@ -82,6 +82,8 @@ no mechanism to add field sizes...likely add to field manager tools rather than 
 NEED FORM VALIDATION
 missing ball size from add rule
 need some way to reopen fields, view details of closures
+only show Join Existing Club if there are in fact existing clubs
+
 
 
 
