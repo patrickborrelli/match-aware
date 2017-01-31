@@ -1300,16 +1300,6 @@ CLOSURES:
 		"start": 1485607680000 ,
 		"end": 1485694800000,
 		"message": "Closed due to excessive rain"
-	},
-	{
-		"club": "588bbb7b1690ac452418b9da",
-		"role": "588bc67aaf35a118542c85c2",
-		"member": "588bb59d1690ac452418b9d1"
-	},
-	{
-		"club": "588bbb7b1690ac452418b9da",
-		"role": "588bc675af35a118542c85c1",
-		"member": "588bb5831690ac452418b9ce"
 	}
 ]
 
