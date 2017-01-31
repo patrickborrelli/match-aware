@@ -45,6 +45,19 @@ removed /team_players and /team_coaches paths and added /team_members path
 
 
 
+version 2.0
+===========
+
+changes to model 
+=========================
+CLOSURE no longer a part of FACILITY or FIELD, own separate entity.  Both FACILITY and FIELD have a collection of CLOSURES
+CLUB_MEMBERSHIP no longer exists...CLUB_ROLE entity replaces it and ties user to club to role
+array of MESSAGES added to ACCESS_REQUEST
+added intermission_duration field to RULES
+
+
+
+
 Issues
 ==========================
 need relationship between referee and referee assignor
@@ -77,4 +90,3 @@ Unresolved Bugs
 =========================
 Updating user roles dialog, must uncheck and recheck all current roles otherwise they are recorded as false - possible solution, use root scope
 revisit bootstrap-select, installed on the wrong app
-
