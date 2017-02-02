@@ -54,7 +54,7 @@ CLOSURE no longer a part of FACILITY or FIELD, own separate entity.  Both FACILI
 CLUB_MEMBERSHIP no longer exists...CLUB_ROLE entity replaces it and ties user to club to role
 array of MESSAGES added to ACCESS_REQUEST
 added intermission_duration field to RULES
-
+added CLUB_ROLES collection to USER for ease of access - will be updated whenever a club role is added
 
 
 
