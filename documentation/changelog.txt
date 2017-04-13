@@ -74,7 +74,6 @@ add filtering to list of pending invites
 move all asynchronous calls out of appDataLoad so they can be called by other controllers.
 add pretty text for all types, enums, etc
 make league select for team creation a multiple select
-edit dialog not populated with ng-model data even though it exists.
 add file selectors, figure out how to upload and add to app/images
 change addon for field sizes to yards
 method variable in facilityForm is being set properly in the $watch but not when the form is being submitted?
@@ -91,4 +90,3 @@ only show Join Existing Club if there are in fact existing clubs
 Unresolved Bugs
 =========================
 Updating user roles dialog, must uncheck and recheck all current roles otherwise they are recorded as false - possible solution, use root scope
-revisit bootstrap-select, installed on the wrong app
