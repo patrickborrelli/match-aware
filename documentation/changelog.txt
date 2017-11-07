@@ -65,7 +65,6 @@ decide on and implement a security model for api paths - POSTPONED
 need validation on all entry (preventing duplicate entries of users, - unique validation)
 get teams by club
 need to add smart cascading delete logic into API
-
 ORGANIZATIONS not implemented
 on authenticated user with no current club roles, make sure to display any pending access requests with the option of resending
 okay dialog on registration success always closes itself
@@ -82,8 +81,10 @@ NEED FORM VALIDATION
 missing ball size from add rule
 need some way to reopen fields, view details of closures
 only show Join Existing Club if there are in fact existing clubs
-
-
+Login dialog needs to close on OK of error dialog associated with login
+Add birthdate range to age group.
+Format user phone numbers for display
+MYUSER variable seems to affect other users' displayed roles
 
 
 
