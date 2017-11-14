@@ -56,8 +56,6 @@ array of MESSAGES added to ACCESS_REQUEST
 added intermission_duration field to RULES
 added CLUB_ROLES collection to USER for ease of access - will be updated whenever a club role is added
 
-
-
 Issues
 ==========================
 need relationship between referee and referee assignor
@@ -85,6 +83,8 @@ Login dialog needs to close on OK of error dialog associated with login
 Add birthdate range to age group.
 Format user phone numbers for display
 MYUSER variable seems to affect other users' displayed roles
+cascade team delete to teammembers
+
 
 
 
